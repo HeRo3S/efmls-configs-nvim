@@ -1,15 +1,14 @@
 -- Metadata
--- languages: toml
--- url: https://github.com/tamasfe/taplo
+-- languages: kdl
+-- url: https://github.com/hougesen/kdlfmt
 
 local fs = require('efmls-configs.fs')
 
-local formatter = 'taplo'
+local formatter = 'kdlfmt'
 local args = 'format -'
 local command = string.format('%s %s', fs.executable(formatter), args)
 
 return {
-  formatCanRange = true,
   formatCommand = command,
   formatStdin = true,
 }

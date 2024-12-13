@@ -1,4 +1,20 @@
 {
+  "HTML": {
+    "linters": [
+      {
+        "name": "markuplint",
+        "url": "https://markuplint.dev/"
+      }
+    ]
+  },
+  "JSON": {
+    "linters": [
+      {
+        "name": "jsonlint",
+        "url": "https://github.com/zaach/jsonlint"
+      }
+    ]
+  },
   "bash": {
     "linters": [
       {
@@ -50,6 +66,10 @@
   "c++": {
     "linters": [
       {
+        "name": "clang_format",
+        "url": "https://clang.llvm.org/docs/ClangFormat.html"
+      },
+      {
         "name": "clang_tidy",
         "url": "http://clang.llvm.org/extra/clang-tidy/"
       },
@@ -91,6 +111,10 @@
   },
   "c": {
     "linters": [
+      {
+        "name": "clang_format",
+        "url": "https://clang.llvm.org/docs/ClangFormat.html"
+      },
       {
         "name": "clang_tidy",
         "url": "http://clang.llvm.org/extra/clang-tidy/"
@@ -249,6 +273,14 @@
       }
     ]
   },
+  "elixir": {
+    "formatters": [
+      {
+        "name": "mix",
+        "url": "https://hexdocs.pm/mix/Mix.html"
+      }
+    ]
+  },
   "fennel": {
     "formatters": [
       {
@@ -279,6 +311,14 @@
       }
     ]
   },
+  "gleam": {
+    "formatters": [
+      {
+        "name": "gleam_format",
+        "url": "https://gleam.run/language-server/#code-formatting"
+      }
+    ]
+  },
   "go": {
     "linters": [
       {
@@ -303,6 +343,10 @@
       }
     ],
     "formatters": [
+      {
+        "name": "djlint",
+        "url": "https://djlint.com/"
+      },
       {
         "name": "gofmt",
         "url": "https://pkg.go.dev/cmd/gofmt"
@@ -337,6 +381,10 @@
       }
     ],
     "formatters": [
+      {
+        "name": "djlint",
+        "url": "https://djlint.com/"
+      },
       {
         "name": "fecs",
         "url": "http://fecs.baidu.com/"
@@ -392,6 +440,10 @@
         "url": "https://biomejs.dev/"
       },
       {
+        "name": "deno_fmt",
+        "url": "https://docs.deno.com/runtime/manual/tools/formatter"
+      },
+      {
         "name": "dprint",
         "url": "https://dprint.dev/"
       },
@@ -434,6 +486,14 @@
       {
         "name": "xo",
         "url": "https://github.com/sindresorhus/xo"
+      }
+    ]
+  },
+  "javascriptreact": {
+    "formatters": [
+      {
+        "name": "deno_fmt",
+        "url": "https://docs.deno.com/runtime/manual/tools/formatter"
       }
     ]
   },
@@ -480,6 +540,14 @@
       {
         "name": "biome",
         "url": "https://biomejs.dev/"
+      }
+    ]
+  },
+  "kdl": {
+    "formatters": [
+      {
+        "name": "kdlfmt",
+        "url": "https://github.com/hougesen/kdlfmt"
       }
     ]
   },
@@ -676,6 +744,10 @@
     ],
     "formatters": [
       {
+        "name": "djlint",
+        "url": "https://djlint.com/"
+      },
+      {
         "name": "php_cs_fixer",
         "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer"
       },
@@ -744,11 +816,19 @@
         "url": "https://github.com/ambv/black"
       },
       {
+        "name": "djlint",
+        "url": "https://djlint.com/"
+      },
+      {
         "name": "isort",
         "url": "https://pycqa.github.io/isort/"
       },
       {
         "name": "ruff",
+        "url": "https://github.com/astral-sh/ruff"
+      },
+      {
+        "name": "ruff_sort",
         "url": "https://github.com/astral-sh/ruff"
       },
       {
@@ -916,6 +996,24 @@
       {
         "name": "sql-formatter",
         "url": "https://github.com/sql-formatter-org/sql-formatter"
+      },
+      {
+        "name": "sqlfluff",
+        "url": "https://github.com/sql-formatter-org/sql-formatter"
+      }
+    ]
+  },
+  "swift": {
+    "linters": [
+      {
+        "name": "swiftlint",
+        "url": "https://github.com/realm/SwiftLint"
+      }
+    ],
+    "formatters": [
+      {
+        "name": "swiftformat",
+        "url": "https://github.com/nicklockwood/SwiftFormat"
       }
     ]
   },
@@ -974,6 +1072,10 @@
         "url": "https://biomejs.dev/"
       },
       {
+        "name": "deno_fmt",
+        "url": "https://docs.deno.com/runtime/manual/tools/formatter"
+      },
+      {
         "name": "dprint",
         "url": "https://dprint.dev/"
       },
@@ -1015,11 +1117,27 @@
       }
     ]
   },
+  "typescriptreact": {
+    "formatters": [
+      {
+        "name": "deno_fmt",
+        "url": "https://docs.deno.com/runtime/manual/tools/formatter"
+      }
+    ]
+  },
   "typst": {
     "formatters": [
       {
+        "name": "prettypst",
+        "url": "https://github.com/antonWetzel/prettypst"
+      },
+      {
         "name": "typstfmt",
         "url": "https://github.com/astrale-sharp/typstfmt"
+      },
+      {
+        "name": "typstyle",
+        "url": "https://github.com/Enter-tainer/typstyle"
       }
     ]
   },
@@ -1074,3 +1192,4 @@
     ]
   }
 }
+

@@ -1,15 +1,18 @@
 -- Metadata
--- languages: toml
--- url: https://github.com/tamasfe/taplo
+-- languages: python,go,php,html
+-- url: https://djlint.com/
 
 local fs = require('efmls-configs.fs')
 
-local formatter = 'taplo'
-local args = 'format -'
+local formatter = 'djlint'
+local args = '--reformat -'
 local command = string.format('%s %s', fs.executable(formatter), args)
 
 return {
-  formatCanRange = true,
   formatCommand = command,
   formatStdin = true,
+  rootMarkers = {
+    '.djlintrc',
+    'pyproject.toml',
+  },
 }

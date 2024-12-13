@@ -1,18 +1,18 @@
 -- Metadata
 -- languages: c,c++
--- url: http://clang.llvm.org/extra/clang-tidy/
+-- url: https://clang.llvm.org/docs/ClangFormat.html
 
 local sourceText = require('efmls-configs.utils').sourceText
 local fs = require('efmls-configs.fs')
 
-local linter = 'clang-tidy'
-local command = string.format('%s "${INPUT}"', fs.executable(linter))
+local linter = 'clang-format'
+local command = string.format('%s --dry-run "${INPUT}"', fs.executable(linter))
 
 return {
   prefix = linter,
-  lintIgnoreExitCode = true,
   lintSource = sourceText(linter),
   lintCommand = command,
+  lintIgnoreExitCode = true,
   lintStdin = false,
   lintFormats = { '%f:%l:%c: %trror: %m', '%f:%l:%c: %tarning: %m', '%f:%l:%c: %tote: %m' },
   rootMarkers = {},

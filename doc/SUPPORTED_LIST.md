@@ -88,6 +88,26 @@ local vale = require('efmls-configs.linters.vale')
 local write_good = require('efmls-configs.linters.write_good')
 ```
 
+### HTML
+
+#### Linters
+
+`markuplint` [https://markuplint.dev/](https://markuplint.dev/)
+
+```lua
+local markuplint = require('efmls-configs.linters.markuplint')
+```
+
+### JSON
+
+#### Linters
+
+`jsonlint` [https://github.com/zaach/jsonlint](https://github.com/zaach/jsonlint)
+
+```lua
+local jsonlint = require('efmls-configs.linters.jsonlint')
+```
+
 ### Bash
 
 #### Linters
@@ -156,6 +176,12 @@ local uncrustify = require('efmls-configs.formatters.uncrustify')
 
 #### Linters
 
+`clang_format` [https://clang.llvm.org/docs/ClangFormat.html](https://clang.llvm.org/docs/ClangFormat.html)
+
+```lua
+local clang_format = require('efmls-configs.linters.clang_format')
+```
+
 `clang_tidy` [http://clang.llvm.org/extra/clang-tidy/](http://clang.llvm.org/extra/clang-tidy/)
 
 ```lua
@@ -215,6 +241,12 @@ local uncrustify = require('efmls-configs.formatters.uncrustify')
 ### C
 
 #### Linters
+
+`clang_format` [https://clang.llvm.org/docs/ClangFormat.html](https://clang.llvm.org/docs/ClangFormat.html)
+
+```lua
+local clang_format = require('efmls-configs.linters.clang_format')
+```
 
 `clang_tidy` [http://clang.llvm.org/extra/clang-tidy/](http://clang.llvm.org/extra/clang-tidy/)
 
@@ -428,6 +460,16 @@ local dartfmt = require('efmls-configs.formatters.dartfmt')
 local hadolint = require('efmls-configs.linters.hadolint')
 ```
 
+### Elixir
+
+#### Formatters
+
+`mix` [https://hexdocs.pm/mix/Mix.html](https://hexdocs.pm/mix/Mix.html)
+
+```lua
+local mix = require('efmls-configs.formatters.mix')
+```
+
 ### Fennel
 
 #### Formatters
@@ -502,6 +544,12 @@ local staticcheck = require('efmls-configs.linters.staticcheck')
 
 #### Formatters
 
+`djlint` [https://djlint.com/](https://djlint.com/)
+
+```lua
+local djlint = require('efmls-configs.formatters.djlint')
+```
+
 `gofmt` [https://pkg.go.dev/cmd/gofmt](https://pkg.go.dev/cmd/gofmt)
 
 ```lua
@@ -547,6 +595,12 @@ local djlint = require('efmls-configs.linters.djlint')
 ```
 
 #### Formatters
+
+`djlint` [https://djlint.com/](https://djlint.com/)
+
+```lua
+local djlint = require('efmls-configs.formatters.djlint')
+```
 
 `fecs` [http://fecs.baidu.com/](http://fecs.baidu.com/)
 
@@ -624,6 +678,12 @@ local xo = require('efmls-configs.linters.xo')
 local biome = require('efmls-configs.formatters.biome')
 ```
 
+`deno_fmt` [https://docs.deno.com/runtime/manual/tools/formatter](https://docs.deno.com/runtime/manual/tools/formatter)
+
+```lua
+local deno_fmt = require('efmls-configs.formatters.deno_fmt')
+```
+
 `dprint` [https://dprint.dev/](https://dprint.dev/)
 
 ```lua
@@ -690,6 +750,16 @@ local rome = require('efmls-configs.formatters.rome')
 local xo = require('efmls-configs.formatters.xo')
 ```
 
+### Javascriptreact
+
+#### Formatters
+
+`deno_fmt` [https://docs.deno.com/runtime/manual/tools/formatter](https://docs.deno.com/runtime/manual/tools/formatter)
+
+```lua
+local deno_fmt = require('efmls-configs.formatters.deno_fmt')
+```
+
 ### Json
 
 #### Linters
@@ -752,6 +822,16 @@ local rome = require('efmls-configs.formatters.rome')
 
 ```lua
 local biome = require('efmls-configs.formatters.biome')
+```
+
+### Kdl
+
+#### Formatters
+
+`kdlfmt` [https://github.com/hougesen/kdlfmt](https://github.com/hougesen/kdlfmt)
+
+```lua
+local kdlfmt = require('efmls-configs.formatters.kdlfmt')
 ```
 
 ### Ksh
@@ -960,6 +1040,12 @@ local psalm = require('efmls-configs.linters.psalm')
 
 #### Formatters
 
+`djlint` [https://djlint.com/](https://djlint.com/)
+
+```lua
+local djlint = require('efmls-configs.formatters.djlint')
+```
+
 `php_cs_fixer` [https://github.com/PHP-CS-Fixer/PHP-CS-Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)
 
 ```lua
@@ -1056,6 +1142,12 @@ local autopep8 = require('efmls-configs.formatters.autopep8')
 local black = require('efmls-configs.formatters.black')
 ```
 
+`djlint` [https://djlint.com/](https://djlint.com/)
+
+```lua
+local djlint = require('efmls-configs.formatters.djlint')
+```
+
 `isort` [https://pycqa.github.io/isort/](https://pycqa.github.io/isort/)
 
 ```lua
@@ -1066,6 +1158,12 @@ local isort = require('efmls-configs.formatters.isort')
 
 ```lua
 local ruff = require('efmls-configs.formatters.ruff')
+```
+
+`ruff_sort` [https://github.com/astral-sh/ruff](https://github.com/astral-sh/ruff)
+
+```lua
+local ruff_sort = require('efmls-configs.formatters.ruff_sort')
 ```
 
 `yapf` [https://github.com/google/yapf](https://github.com/google/yapf)
@@ -1290,6 +1388,30 @@ local sqlfluff = require('efmls-configs.linters.sqlfluff')
 local sql-formatter = require('efmls-configs.formatters.sql-formatter')
 ```
 
+`sqlfluff` [https://github.com/sql-formatter-org/sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
+
+```lua
+local sqlfluff = require('efmls-configs.formatters.sqlfluff')
+```
+
+### Swift
+
+#### Linters
+
+`swiftlint` [https://github.com/realm/SwiftLint](https://github.com/realm/SwiftLint)
+
+```lua
+local swiftlint = require('efmls-configs.linters.swiftlint')
+```
+
+#### Formatters
+
+`swiftformat` [https://github.com/nicklockwood/SwiftFormat](https://github.com/nicklockwood/SwiftFormat)
+
+```lua
+local swiftformat = require('efmls-configs.formatters.swiftformat')
+```
+
 ### Terraform
 
 #### Formatters
@@ -1364,6 +1486,12 @@ local xo = require('efmls-configs.linters.xo')
 local biome = require('efmls-configs.formatters.biome')
 ```
 
+`deno_fmt` [https://docs.deno.com/runtime/manual/tools/formatter](https://docs.deno.com/runtime/manual/tools/formatter)
+
+```lua
+local deno_fmt = require('efmls-configs.formatters.deno_fmt')
+```
+
 `dprint` [https://dprint.dev/](https://dprint.dev/)
 
 ```lua
@@ -1424,14 +1552,36 @@ local rome = require('efmls-configs.formatters.rome')
 local xo = require('efmls-configs.formatters.xo')
 ```
 
+### Typescriptreact
+
+#### Formatters
+
+`deno_fmt` [https://docs.deno.com/runtime/manual/tools/formatter](https://docs.deno.com/runtime/manual/tools/formatter)
+
+```lua
+local deno_fmt = require('efmls-configs.formatters.deno_fmt')
+```
+
 ### Typst
 
 #### Formatters
+
+`prettypst` [https://github.com/antonWetzel/prettypst](https://github.com/antonWetzel/prettypst)
+
+```lua
+local prettypst = require('efmls-configs.formatters.prettypst')
+```
 
 `typstfmt` [https://github.com/astrale-sharp/typstfmt](https://github.com/astrale-sharp/typstfmt)
 
 ```lua
 local typstfmt = require('efmls-configs.formatters.typstfmt')
+```
+
+`typstyle` [https://github.com/Enter-tainer/typstyle](https://github.com/Enter-tainer/typstyle)
+
+```lua
+local typstyle = require('efmls-configs.formatters.typstyle')
 ```
 
 ### Vala
